@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | JS Form Validation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="main__wrapper">
+      <div class="header">
+        <h2>Login Form</h2>
+      </div>
+      <form class="form" id="js--form">
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter Email Address"
+            aria-describedby="emailId"
+          />
+          <em class="fa fa-exclamation-circle"></em>
+          <small class="message">Error message</small>
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter Password"
+            aria-describedby="passwordId"
+          />
+          <em class="fa fa-exclamation-circle"></em>
+          <small class="message">Error message</small>
+        </div>
+        <div class="text-secondary">
+          Not Registerd Yet?
+          <a href="./register.html" class="text-primary">Register Here</a>
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            class="btn btn-submit btn-block"
+            value="SUBMIT"
+          />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

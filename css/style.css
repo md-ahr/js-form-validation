@@ -1,0 +1,122 @@
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --grey: #757575;
+  --primary-color: #e73a8a;
+  --secondary-color: #f3896b;
+  --placeholder-color: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/img-bg.jpg) no-repeat center center / cover;
+  position: relative;
+}
+
+.main__wrapper {
+  width: 30%;
+  background-color: var(--white);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__wrapper .header {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 15px 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.main__wrapper .header h2 {
+  font-size: 156.25%;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.main__wrapper .form {
+  padding: 0 25px;
+}
+
+.main__wrapper .form .form-group {
+  margin-top: 20px;
+  position: relative;
+}
+
+.main__wrapper .form .form-group .form-label {
+  font-size: 100%;
+  color: var(--grey);
+  margin-bottom: 3px;
+}
+
+.main__wrapper .form .form-group .form-control {
+  font-size: 100%;
+  color: var(--grey);
+  height: 40px;
+}
+
+.main__wrapper .form .form-group .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.1rem rgb(231 58 138 / 25%);
+}
+
+.main__wrapper .form .form-group .form-control::placeholder {
+  color: var(--placeholder-color);
+}
+
+.main__wrapper .form .form-group .fa {
+  position: absolute;
+  top: 38px;
+  right: 3%;
+  visibility: hidden;
+}
+
+.main__wrapper .form .form-group .message {
+  color: var(--grey);
+  visibility: hidden;
+  position: absolute;
+}
+
+.main__wrapper .form .form-group .btn-submit {
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white);
+  font-size: 112.5%;
+  border: 0;
+  height: 45px;
+  margin: 25px 0 20px 0;
+  transition: all 1s ease;
+}
+
+.main__wrapper .form .form-group .btn-submit:focus {
+  box-shadow: 0 0 0 0.1rem rgb(231 58 138 / 25%);
+}
+
+.main__wrapper .form .form-group .btn-submit:hover {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  transition: all 1s ease;
+}
